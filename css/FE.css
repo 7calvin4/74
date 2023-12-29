@@ -9,7 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden; /* Hide the main scrollbar */
+    overflow-x: hidden; /* Hide the main scrollbar */
+    overflow-y: auto;
 }
 
 header {
@@ -67,16 +68,6 @@ section#intro {
 
 body.intro-visible section#intro {
     transform: translateY(0); /* Bring the intro section to its normal position */
-}
-
-/* Custom scrollbar styling for WebKit */
-main::-webkit-scrollbar {
-    width: 6px;
-    background-color: #000; /* Set background color for the scrollbar track */
-}
-
-main::-webkit-scrollbar-thumb {
-    background-color: transparent;
 }
 
 footer {
