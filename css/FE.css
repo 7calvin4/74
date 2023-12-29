@@ -1,9 +1,7 @@
 body {
     font-family: 'Inconsolata', monospace;
-
-    background: linear-gradient(to bottom, #111, #003300);
-    animation: waveAnimation 10s infinite linear;
-    margin: 0;
+    background: rgb(1,56,1);
+background: linear-gradient(90deg, rgba(1,56,1,1) 0%, rgba(0,0,0,1) 50%, rgba(8,61,0,1) 100%);
     padding: 0;
     color: #00ff00;
     display: flex;
@@ -11,23 +9,22 @@ body {
     min-height: 100vh;
     overflow-x: hidden; /* Hide the main scrollbar */
     overflow-y: auto;
+
+
 }
 
 header {
-    background-color: #000;
-    padding: 20px; /* Increased header padding */
+    background: none;
     text-align: center;
     width: 100%;
 }
 
 nav ul {
+    background: none;
     list-style: none;
-    padding: 15px;
     margin: 0;
     display: flex;
     justify-content: center; /* Center the tabs horizontally */
-    background-color: #000; /* Match the header background color */
-    width: 100%; /* Extend the navigation bar to the full width */
 }
 
 nav li {
@@ -38,7 +35,7 @@ nav a {
     padding: 10px 20px;
     text-decoration: none;
     color: #00ff00;
-    background-color: #000; /* Match the header background color */
+    background: none;
     border-bottom: 2px solid transparent; /* Add a transparent bottom border */
     transition: border-color 0.3s ease, background-color 0.3s ease; /* Add transitions for smooth effects */
 }
@@ -46,7 +43,6 @@ nav a {
 nav a:hover,
 nav a.active {
     border-color: #00ff00; /* Change the border color on hover or when active */
-    background-color: #111; /* Darken the background color on hover or when active */
 }
 
 nav i {
@@ -75,7 +71,7 @@ footer {
     padding: 10px;
     width: 100%;
     text-align: center;
-    position: relative; top: 5000px;
+    position: relative; top: 200px;
     margin-top: auto; /* Push the footer to the bottom */
 }
 
