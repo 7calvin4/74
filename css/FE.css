@@ -84,6 +84,7 @@ footer {
     padding: 10px;
     width: 100%;
     text-align: center;
+    position: relative; top: 5000px;
     margin-top: auto; /* Push the footer to the bottom */
 }
 
