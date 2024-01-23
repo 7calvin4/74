@@ -22,6 +22,17 @@
         .site-name {
             font-size: 24px;
             margin-bottom: 20px;
+            animation: moveUpDown 2s infinite alternate; /* Add animation effect */
+            user-select: none; /* Make text unselectable */
+        }
+
+        @keyframes moveUpDown {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
         }
 
         .message {
